@@ -1,0 +1,35 @@
+//Syntax for Xpath:
+		/*
+		  "//tagName[@attribute='value']"
+		  "//*[@attribute='value']" --if you don't want the tagname *- reprsents all.
+		  "//tagName[contains(@attribute, 'value')]" - regular expresions xpath if the id & it's value is alphanumeric.
+		  "//input[contains(@name, 'username')]"
+		  example of a parent child xpath:
+		  "//div[@id='gb']/div/div/div/div/div[2]/a"
+		  
+		  xpath expression to click the following sibling:
+		  "//button[text() = 'Login']/following-sibling::button[2]" //index marks which sibling it is
+		  
+		  Locate a parent from the child
+		  "//button[text() = 'Login']/parent::div"
+		  
+		  if there are more than one matching node found, below is the xpath
+		  
+		  " (//a[@value='MAA'])[2] " //mark the index to say the exact matching node as the selenium scans for elemnet from the top left..
+		  
+		  parent & child xpath - another example:
+		  
+		" //div[@id='dropdown'] //a[@value='dropdownvalue'] " // a white space should be given after the parent xpath.
+		  
+		  Notes: Using x-path you can traverse back (ex: child to parent or absolute)
+		 */
+		
+		/*Syntax for CSS
+		"tagName[attribute='value']"
+		"tagName#id (# -> id, place the value of the id)"
+		"tagName.classname (. -> class, value of the class)"
+		"tagName[attribute*='value']" --regular expression for the css.
+		
+		Notes: Using CSS you access class under the class.
+		when you find a gap/space between the css selector names, fill it with dot (class = "identity last" -> .identity.last)
+		*/
